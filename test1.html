@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<link rel="stylesheet" href="js/lib/bootstrap-3.0.3-dist/css/bootstrap.css"/>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+		<script src="js/lib/bootstrap-3.0.3-dist/js/bootstrap.js"></script>
+
+		<style>
+			#menu, #content {
+				border: solid 1px silver;
+			}
+
+			#menu {
+				margin-left: -408px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div class="container1">
+			<div class="row">
+				<div class="col-xs-3 closed" id="menu">
+					menu
+				</div>
+
+				<div class="col-xs-12" id="content">
+					<div class="container">
+						content
+
+						<div class="btn btn-default" id="toggle">
+							Toggle
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$(document).ready(function () {
+				$('#toggle').on('click', function () {
+					var isOpening = $('#menu').hasClass('closed');
+					var width = $('#menu').outerWidth();
+					$('#menu').animate({"margin-left": ( isOpening ? '0' : '-' + width)}, function () {
+						if (isOpening)
+							$('#menu').removeClass('closed');
+						else
+							$('#menu').addClass('closed');
+					});
+//					if (!$('#menu').hasClass('hidden')) {
+//						$('#menu').
+//						$('#menu').addClass('hidden');
+//					}
+//					else
+//						$('#menu').removeClass('hidden');
+				})
+			})
+		</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

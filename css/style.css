@@ -1,0 +1,137 @@
+body {
+    padding-top: 51px !important;
+}
+
+.text-center {
+    padding-top: 20px !important;
+}
+
+.col-xs-12 {
+    background-color: #fff !important;
+}
+
+#sidebar {
+    height: 100% !important;
+    padding-right: 0 !important;
+    padding-top: 20px !important;
+}
+
+#sidebar .nav {
+    width: 95% !important;
+}
+
+#sidebar li {
+    border: 0 #f2f2f2 solid !important;
+    border-bottom-width: 1px !important;
+}
+
+.main-navbar-toggle {
+    display: block !important;
+    float: left !important;
+
+    margin-left: 15px !important;
+}
+
+.main-navbar-header {
+    float: left !important;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+#sidebar {
+    background-color: #3b3b3b !important;
+    padding-top: 0 !important;
+}
+
+#sidebar .nav > li {
+    color: #ddd;
+    background: linear-gradient(#3E3E3E, #383838);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E;
+}
+
+#sidebar .nav > li:first-child {
+    border-top: 0 !important;
+}
+
+#sidebar .nav > li > a {
+    color: #ddd !important;
+}
+
+#sidebar .nav > li > a > img {
+    max-width: 14px !important;
+}
+
+#sidebar .nav > li > a:hover, #sidebar .nav > li > a:focus {
+    text-decoration: none !important;
+    background: linear-gradient(#373737, #323232);
+    color: #fff;
+}
+
+#sidebar .nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+#sidebar .nav a:hover .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media screen and (max-width: 992px /*767px*/
+) {
+    .row-offcanvas-right .sidebar-offcanvas {
+        right: -31.6% !important;
+    }
+
+    .row-offcanvas-left .sidebar-offcanvas {
+        left: -31.6% !important;
+    }
+
+    .row-offcanvas-right.active {
+        right: 31.6% !important;
+    }
+
+    .row-offcanvas-left.active {
+        left: 31.6% !important;
+    }
+
+    .sidebar-offcanvas {
+        position: absolute !important;
+        top: 0 !important;
+        width: 31.6% !important;
+    }
+}
+
+@media screen and (min-width: 850px) /*and (max-width: 1199px)*/ {
+    .row-offcanvas-right .sidebar-offcanvas {
+        right: -200px !important;
+    }
+
+    .row-offcanvas-left .sidebar-offcanvas {
+        left: -200px !important;
+    }
+
+    .row-offcanvas-right.active {
+        right: 200px !important;
+    }
+
+    .row-offcanvas-left.active {
+        left: 200px !important;
+    }
+
+    .sidebar-offcanvas {
+        position: absolute !important;
+        top: 0 !important;
+        width: 200px !important;
+    }
+}
